@@ -1,2 +1,0 @@
-include ':app'
-rootProject.name = "MVVM-Kotlin-Android-Architecture"

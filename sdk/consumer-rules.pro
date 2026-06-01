@@ -1,0 +1,2 @@
+-keep class com.sdk.voiceai.** { *; }
+-keepclassmembers class com.sdk.voiceai.** { *; }

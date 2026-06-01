@@ -1,0 +1,105 @@
+[versions]
+kotlin                  = "2.0.21"
+agp                     = "8.7.3"
+coroutines              = "1.9.0"
+serialization           = "1.7.3"
+composeBom              = "2024.11.00"
+activity                = "1.9.3"
+lifecycle               = "2.8.7"
+navigation              = "2.8.5"
+hilt                    = "2.52"
+hiltNavigation          = "1.2.0"
+okhttp                  = "4.12.0"
+retrofit                = "2.11.0"
+room                    = "2.6.1"
+datastore               = "1.1.1"
+timber                  = "5.0.1"
+coreKtx                 = "1.15.0"
+junit                   = "4.13.2"
+junitVersion            = "1.2.1"
+espressoCore            = "3.6.1"
+mockk                   = "1.13.13"
+turbine                 = "1.2.0"
+securityCrypto          = "1.1.0-alpha06"
+junit5                  = "5.10.2"
+
+[libraries]
+# Core
+androidx-core-ktx               = { group = "androidx.core",                    name = "core-ktx",                      version.ref = "coreKtx" }
+
+# Coroutines
+kotlinx-coroutines-core         = { group = "org.jetbrains.kotlinx",            name = "kotlinx-coroutines-core",        version.ref = "coroutines" }
+kotlinx-coroutines-android      = { group = "org.jetbrains.kotlinx",            name = "kotlinx-coroutines-android",     version.ref = "coroutines" }
+kotlinx-coroutines-test         = { group = "org.jetbrains.kotlinx",            name = "kotlinx-coroutines-test",        version.ref = "coroutines" }
+kotlinx-serialization-json      = { group = "org.jetbrains.kotlinx",            name = "kotlinx-serialization-json",     version.ref = "serialization" }
+
+# Compose BOM
+compose-bom                     = { group = "androidx.compose",                 name = "compose-bom",                   version.ref = "composeBom" }
+compose-ui                      = { group = "androidx.compose.ui",              name = "ui" }
+compose-ui-tooling              = { group = "androidx.compose.ui",              name = "ui-tooling" }
+compose-ui-tooling-preview      = { group = "androidx.compose.ui",              name = "ui-tooling-preview" }
+compose-ui-test-manifest        = { group = "androidx.compose.ui",              name = "ui-test-manifest" }
+compose-ui-test-junit4          = { group = "androidx.compose.ui",              name = "ui-test-junit4" }
+compose-material3               = { group = "androidx.compose.material3",       name = "material3" }
+compose-runtime                 = { group = "androidx.compose.runtime",         name = "runtime" }
+compose-foundation              = { group = "androidx.compose.foundation",      name = "foundation" }
+compose-icons-extended          = { group = "androidx.compose.material",        name = "material-icons-extended" }
+
+# Jetpack
+activity-compose                = { group = "androidx.activity",                name = "activity-compose",               version.ref = "activity" }
+lifecycle-runtime-ktx           = { group = "androidx.lifecycle",               name = "lifecycle-runtime-ktx",          version.ref = "lifecycle" }
+lifecycle-viewmodel-ktx         = { group = "androidx.lifecycle",               name = "lifecycle-viewmodel-ktx",        version.ref = "lifecycle" }
+lifecycle-viewmodel-compose     = { group = "androidx.lifecycle",               name = "lifecycle-viewmodel-compose",    version.ref = "lifecycle" }
+lifecycle-runtime-compose       = { group = "androidx.lifecycle",               name = "lifecycle-runtime-compose",      version.ref = "lifecycle" }
+navigation-compose              = { group = "androidx.navigation",               name = "navigation-compose",             version.ref = "navigation" }
+
+# Hilt
+hilt-android                    = { group = "com.google.dagger",                name = "hilt-android",                   version.ref = "hilt" }
+hilt-android-compiler           = { group = "com.google.dagger",                name = "hilt-android-compiler",          version.ref = "hilt" }
+hilt-navigation-compose         = { group = "androidx.hilt",                    name = "hilt-navigation-compose",        version.ref = "hiltNavigation" }
+
+# Networking
+okhttp                          = { group = "com.squareup.okhttp3",             name = "okhttp",                         version.ref = "okhttp" }
+okhttp-logging                  = { group = "com.squareup.okhttp3",             name = "logging-interceptor",            version.ref = "okhttp" }
+retrofit                        = { group = "com.squareup.retrofit2",           name = "retrofit",                       version.ref = "retrofit" }
+retrofit-gson                   = { group = "com.squareup.retrofit2",           name = "converter-gson",                 version.ref = "retrofit" }
+retrofit-scalars                = { group = "com.squareup.retrofit2",           name = "converter-scalars",              version.ref = "retrofit" }
+
+# Storage
+datastore-preferences           = { group = "androidx.datastore",               name = "datastore-preferences",          version.ref = "datastore" }
+room-runtime                    = { group = "androidx.room",                    name = "room-runtime",                   version.ref = "room" }
+room-ktx                        = { group = "androidx.room",                    name = "room-ktx",                       version.ref = "room" }
+room-compiler                   = { group = "androidx.room",                    name = "room-compiler",                  version.ref = "room" }
+
+# Logging
+timber                          = { group = "com.jakewharton.timber",           name = "timber",                         version.ref = "timber" }
+
+# Testing
+junit                           = { group = "junit",                            name = "junit",                          version.ref = "junit" }
+androidx-junit                  = { group = "androidx.test.ext",                name = "junit",                          version.ref = "junitVersion" }
+androidx-espresso-core          = { group = "androidx.test.espresso",           name = "espresso-core",                  version.ref = "espressoCore" }
+mockk                           = { group = "io.mockk",                         name = "mockk",                          version.ref = "mockk" }
+turbine                         = { group = "app.cash.turbine",                 name = "turbine",                        version.ref = "turbine" }
+
+# Security
+security-crypto                 = { group = "androidx.security",                name = "security-crypto",                version.ref = "securityCrypto" }
+
+# JUnit 5
+junit5-api                      = { group = "org.junit.jupiter",               name = "junit-jupiter-api",              version.ref = "junit5" }
+junit5-engine                   = { group = "org.junit.jupiter",               name = "junit-jupiter-engine",           version.ref = "junit5" }
+junit5-params                   = { group = "org.junit.jupiter",               name = "junit-jupiter-params",           version.ref = "junit5" }
+
+[plugins]
+android-application             = { id = "com.android.application",             version.ref = "agp" }
+android-library                 = { id = "com.android.library",                 version.ref = "agp" }
+kotlin-android                  = { id = "org.jetbrains.kotlin.android",        version.ref = "kotlin" }
+kotlin-compose                  = { id = "org.jetbrains.kotlin.plugin.compose", version.ref = "kotlin" }
+kotlin-serialization            = { id = "org.jetbrains.kotlin.plugin.serialization", version.ref = "kotlin" }
+kotlin-kapt                     = { id = "org.jetbrains.kotlin.kapt",           version.ref = "kotlin" }
+hilt                            = { id = "com.google.dagger.hilt.android",      version.ref = "hilt" }
+
+[bundles]
+coroutines                      = ["kotlinx-coroutines-core", "kotlinx-coroutines-android"]
+compose-ui                      = ["compose-ui", "compose-ui-tooling-preview", "compose-material3", "compose-runtime", "compose-foundation", "compose-icons-extended"]
+lifecycle                       = ["lifecycle-runtime-ktx", "lifecycle-viewmodel-ktx", "lifecycle-viewmodel-compose", "lifecycle-runtime-compose"]
+networking                      = ["okhttp", "okhttp-logging", "retrofit", "retrofit-gson", "retrofit-scalars"]
